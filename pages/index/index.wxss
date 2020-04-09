@@ -1,0 +1,31 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.warnButton {
+    background-color: #1bd1a5;
+    color: black;
+    margin-top: 45%;
+}
+.modelClass {
+    width: 680rpx;
+    height: 100rpx;
+}

@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <view>
+      <button wx:if="{{buttonFlag}}" size="default" class="warnButton" bindtap="clickButton"> 记一笔 </button>
+      </view>
+    </block>
+    <view wx:if="{{inp}}" class="modelClass">
+        <view>
+            金额：<input type="number" maxlength="10" class="weui-input" auto-focus placeholder="请输入金额"/>
+        </view>
+        <view>
+            备注：<input type="number" maxlength="10" class="weui-input" auto-focus placeholder="请输入金额"/>
+        </view>
+
+    </view>
+  </view>
+</view>
